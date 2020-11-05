@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "447243948217",
+    "firebase_url": "https://todo-app-b7cc0.firebaseio.com",
+    "project_id": "todo-app-b7cc0",
+    "storage_bucket": "todo-app-b7cc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447243948217:android:363a9d0d79c9e6a094cb68",
+        "android_client_info": {
+          "package_name": "com.qusaieilouti.todo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447243948217-6tqttcm2e6ocsnsg4l7jup4t3frt3cef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfnDIaGHaS3zD8zWxKFUt4KHhbTzLLNxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447243948217-6tqttcm2e6ocsnsg4l7jup4t3frt3cef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
