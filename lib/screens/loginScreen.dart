@@ -1,9 +1,9 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_app/models/firebaseModel.dart';
 import 'package:todo_app/screens/homeScreen.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class LoginScreen extends StatelessWidget {
   static const String id = 'loginScreen';
@@ -18,6 +18,23 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                Padding(
+                  padding: const EdgeInsets.all(40.0),
+                  child: ColorizeAnimatedTextKit(
+                      text: [
+                        "TODO",
+                      ],
+                      textStyle:
+                          TextStyle(fontSize: 50.0, fontFamily: "Horizon"),
+                      colors: [
+                        Colors.blue,
+                        Colors.lightBlueAccent,
+                      ],
+                      textAlign: TextAlign.center,
+                      alignment:
+                          AlignmentDirectional.topStart // or Alignment.topLeft
+                      ),
+                ),
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
@@ -43,7 +60,11 @@ class LoginScreen extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                   child: RaisedButton(
-                    child: Text('login'),
+                    color: Colors.blue,
+                    child: Text(
+                      'log In',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     padding: EdgeInsets.all(30),
                     onPressed: () async {
                       try {

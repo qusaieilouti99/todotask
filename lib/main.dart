@@ -6,7 +6,6 @@ import 'package:todo_app/models/firebaseModel.dart';
 import 'package:todo_app/screens/homeScreen.dart';
 import 'package:todo_app/screens/loginScreen.dart';
 import 'package:todo_app/screens/registerScreen.dart';
-import 'package:todo_app/screens/waitingScreen.dart';
 import 'package:todo_app/screens/welcomeScreen.dart';
 
 class Auth {
@@ -56,7 +55,6 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: routeID,
         routes: {
-          WaitingScreen.id: (context) => WaitingScreen(),
           HomeScreen.id: (context) => HomeScreen(),
           RegisterScreen.id: (context) => RegisterScreen(),
           WelcomeScreen.id: (context) => WelcomeScreen(),
